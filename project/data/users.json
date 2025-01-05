@@ -1,0 +1,26 @@
+{
+    "john_doe": {
+        "email": "john@example.com",
+        "phone": "1234567890",
+        "history": [
+            { "medicine": "Paracetamol", "dosage": "500mg", "date": "2024-09-10", "status": "Completed" },
+            { "medicine": "Ibuprofen", "dosage": "200mg", "date": "2024-10-01", "status": "Ongoing" }
+        ]
+    },
+    "jane_smith": {
+        "email": "jane@example.com",
+        "phone": "9876543210",
+        "history": [
+            { "medicine": "Cough Syrup", "dosage": "10ml", "date": "2024-08-15", "status": "Completed" },
+            { "medicine": "Vitamin C", "dosage": "1000mg", "date": "2024-09-20", "status": "Completed" }
+        ]
+    },
+    "michael": {
+        "email": "michael@example.com",
+        "phone": "5679805432",
+        "history": [
+            { "medicine": "Aspirin", "dosage": "300mg", "date": "2024-07-22", "status": "Completed" },
+            { "medicine": "Antacid", "dosage": "2 tablets", "date": "2024-10-05", "status": "Ongoing" }
+        ]
+    }
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medicine History</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="history-container">
+        <h1>Medicine History</h1>
+        <div id="user-info"></div>
+
+        <table border="1" class="medicine-table">
+            <thead>
+                <tr>
+                    <th>Medicine Name</th>
+                    <th>Dosage</th>
+                    <th>Purchase Date</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody id="medicine-table-body">
+                <!-- Medicine history rows will be populated here -->
+            </tbody>
+        </table>
+
+        <button onclick="goBack()">Back to Main Page</button>
+    </div>
+
+    <script>
+        // Extract username from URL parameters
+        const params = new URLSearchParams(window.location.search);
+        const username = params.get('username')?.toLowerCase();
+
+        // Fetch user data from the JSON file
+        fetch('data/users.json')
+            .then(response => response.json())
+            .then(data => {
+                const user = data[username];
+
+                if (user) {
+                    displayUserInfo(user);
+                    populateMedicineHistory(user.history);
+                } else {
+                    document.getElementById('medicine-table-body').innerHTML =
+                        `<tr><td colspan="4">No medicine history found for this user.</td></tr>`;
+                }
+            })
+            .catch(error => {
+                console.error('Error fetching user data:', error);
+            });
+
+        // Function to display user info
+        function displayUserInfo(user) {
+            document.getElementById('user-info').innerHTML = `
+                <p><strong>Email:</strong> ${user.email}</p>
+                <p><strong>Phone:</strong> ${user.phone}</p>
+            `;
+        }
+
+        // Function to populate medicine history table
+        function populateMedicineHistory(history) {
+            const tableBody = document.getElementById('medicine-table-body');
+            history.forEach(item => {
+                const row = document.createElement('tr');
+                row.innerHTML = `
+                    <td>${item.medicine}</td>
+                    <td>${item.dosage}</td>
+                    <td>${item.date}</td>
+                    <td>${item.status}</td>
+                `;
+                tableBody.appendChild(row);
+            });
+        }
+
+        // Function to navigate back to main page
+        function goBack() {
+            window.location.href = 'index.html'; // Adjust if your main page filename differs
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CureKart Pharmacy Store</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <img src="logo.jpg" alt="CUREKART Logo">
+                CUREKART
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </nav>
+            <!-- Search Form -->
+<div class="search-bar">
+    <input type="text" id="search-input" placeholder="Search for medicines..." />
+    <button id="search-btn">Search</button>
+</div>
+
+            
+            <!-- Updated Login Button -->
+            <div class="login">
+                <button onclick="window.location.href='login.html'">Login</button>
+            </div>
+            <!-- Results Container -->
+<div id="result-container"></div>
+            
+            <div class="contact">
+                <a href="tel:+6286464442222" class="contact-button">+62 864 6444 2222</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Pharmacy Store</h2>
+            <h1>Your Trusted Pharmacy Store</h1>
+            <p>Where health meets convenience.</p>
+            <div class="satisfaction">
+                <div class="rating">
+                    ● ● ● ● ●
+                </div>
+                <p>100k+ Satisfied Customers</p>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="pharmacy-illustration.jpg" alt="Pharmacy Illustration">
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="feature-item">
+            <img src="free-shipping-icon.jpg" alt="Free Shipping">
+            <p>Free Shipping <br> Order Over $600</p>
+        </div>
+        <div class="feature-item">
+            <img src="secure-payment-icon.jpg" alt="Quick Payment">
+            <p>Quick Payment <br> 100% Secure</p>
+        </div>
+        <div class="feature-item">
+            <img src="support-icon.jpg" alt="24/7 Support">
+            <p>24/7 Support <br> Ready for You</p>
+        </div>
+    </section>
+
+    <!-- Promotional Section -->
+    <section class="promo-section">
+        <div class="promo-card big-sale">
+            <h3>Big Sale</h3>
+            <h2>Get an Extra 50% Off</h2>
+            <p>On premium subscription.</p>
+        </div>
+        <div class="promo-card discount">
+            <h3>Take the discount for the first shopping on our website</h3>
+            <h2>30%</h2>
+            <a href="#" class="shop-now-button">Shop Now</a>
+        </div>
+    </section>
+
+    <!-- Featured Products Section -->
+    <section class="featured-products">
+        <header>
+            <h1>Featured Pharmacy Essentials</h1>
+        </header>
+        <div class="product">
+            <img src="acetaminophen.jpg" alt="Acetaminophen Pills">
+            <h2>Acetaminophen Pills</h2>
+            <p><span class="original-price">$18.00</span> <span class="discounted-price">$12.00</span></p>
+        </div>
+        <div class="product">
+            <img src="cough-syrup.jpg" alt="Cough Syrup">
+            <h2>Cough Syrup</h2>
+            <p><span class="original-price">$18.00</span> <span class="discounted-price">$12.00</span></p>
+        </div>
+        <div class="product">
+            <img src="multivitamin.jpg" alt="Multivitamin B6+">
+            <h2>Multivitamin B6+</h2>
+            <p><span class="original-price">$18.00</span> <span class="discounted-price">$12.00</span></p>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories">
+        <div class="category">
+            <img src="pain-relievers.jpg" alt="Pain Relievers">
+            <h3>Pain Relievers</h3>
+            <button onclick="exploreCategory('pain-relievers')">Explore Category</button>
+        </div>
+        <div class="category">
+            <img src="allergy-medications.jpg" alt="Allergy Medications">
+            <h3>Allergy Medications</h3>
+            <button onclick="exploreCategory('allergy-medications')">Explore Category</button>
+        </div>
+        <div class="category">
+            <img src="first-aid-supplies.jpg" alt="First Aid Supplies">
+            <h3>First Aid Supplies</h3>
+            <button onclick="exploreCategory('first-aid-supplies')">Explore Category</button>
+        </div>
+        <div class="category">
+            <img src="dental-care.jpg" alt="Dental Care">
+            <h3>Dental Care</h3>
+            <button onclick="exploreCategory('dental-care')">Explore Category</button>
+        </div>
+    </section>
+
+    <!-- Commitment Section -->
+    <section id="commitment">
+        <h1>Our Commitment to Quality</h1>
+        <div class="commitment-content">
+            <div class="commitment-text">
+                <div class="commitment-item">
+                    <h3>Wide Product Range</h3>
+                    <p>Discover a comprehensive selection of products tailored to meet all your health and wellness needs.</p>
+                </div>
+                <div class="commitment-item">
+                    <h3>Quality Assurance</h3>
+                    <p>Commitment to excellence in every product, ensuring the highest standards of quality and reliability.</p>
+                </div>
+                <div class="commitment-item">
+                    <h3>Eco-Friendly Practices</h3>
+                    <p>Dedicated to sustainability with eco-friendly practices that protect our planet while caring for your health.</p>
+                </div>
+            </div>
+            <div class="commitment-image">
+                <img src="lab-research.jpg" alt="Laboratory Research">
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <h2>Comprehensive Pharmacy Services</h2>
+        <div class="services-content">
+            <div class="service-item">
+                <img src="prescription-filling.jpg" alt="Prescription Filling">
+                <h3>Prescription Filling</h3>
+            </div>
+            <div class="service-item">
+                <img src="home-delivery.jpg" alt="Home Delivery">
+                <h3>Home Delivery</h3>
+            </div>
+            <div class="service-item">
+                <img src="health-consultations.jpg" alt="Health Consultations">
+                <h3>Health Consultations</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team">
+        <h2>The Heart of Our Pharmacy</h2>
+        <div class="team-content">
+            <div class="team-member">
+                <img src="pharmacist1.jpg" alt="Dr. George William">
+                <h4>Dr. George William, PharmD</h4>
+                <p>Chief Pharmacist - 5 years</p>
+            </div>
+            <div class="team-member">
+                <img src="pharmacist2.jpg" alt="Dr. Muhammed">
+                <h4>Dr. Muhammed, MD</h4>
+                <p>Medical Advisor - 9 years</p>
+            </div>
+            <div class="team-member">
+                <img src="pharmacist3.jpg" alt="Nithya, RN, BSN">
+                <h4>Nithya, RN, BSN</h4>
+                <p>Director of Health Services - 8 years</p>
+            </div>
+        </div>
+    </section>
+
+    <!<!-- Testimonial Section -->
+    <section class="testimonial-section">
+        <h2>Testimonials That Inspire Us</h2>
+        <div class="testimonial">
+            <div class="avatar-placeholder"></div>
+            <blockquote>
+                <p>"Pharmacy Store is my go-to for over-the-counter medications and health products. They have a wide selection, and their website makes it easy to order online. The only improvement I'd suggest is expanding their beauty and skincare section."</p>
+                <cite>Theresa J. Jones<br><span>24 years old</span></cite>
+            </blockquote>
+        </div>
+        <button class="all-reviews-btn">All Review</button>
+    </section>
+
+    <!-- Footer Section -->
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-logo">
+                <h2>Curekart</h2>
+            </div>
+            <div class="footer-sections">
+                <div class="footer-section company">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Products</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Blog & News</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section resources">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="#">Educational</a></li>
+                        <li><a href="#">Mental Health Resources</a></li>
+                        <li><a href="#">Nutrition</a></li>
+                        <li><a href="#">Medication Guides</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section social-media">
+                    <h3>Follow Our Social Media</h3>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon">Instagram</a>
+                        <a href="#" class="social-icon">Youtube</a>
+                        <a href="#" class="social-icon">Facebook</a>
+                        <a href="#" class="social-icon">LinkedIn</a>
+                        <a href="#" class="social-icon">Twitter</a>
+                        <a href="#" class="social-icon">TikTok</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 CureKart Store | Design by Nexus</p>
+            <p><a href="#">Terms of Use</a> | <a href="#">Privacy Policy</a></p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+
+</body>
+</html>
+               

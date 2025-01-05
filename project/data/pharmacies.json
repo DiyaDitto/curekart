@@ -1,0 +1,100 @@
+[
+    {
+        "name": "Health Pharmacy",
+        "contact": "+91 12345 67890",
+        "medicine": "Acetaminophen",
+        "rate": 1200,
+        "deliveryOptions": ["Home Delivery", "Pickup"]
+    },
+    {
+        "name": "Wellness Pharmacy",
+        "contact": "+91 09876 54321",
+        "medicine": "Acetaminophen",
+        "rate": 1150,
+        "deliveryOptions": ["Pickup"]
+    },
+    {
+        "name": "Cure Pharmacy",
+        "contact": "+91 98765 43210",
+        "medicine": "Cough Syrup",
+        "rate": 800,
+        "deliveryOptions": ["Home Delivery", "Pickup"]
+    },
+    {
+        "name": "Care Pharmacy",
+        "contact": "+91 87654 32109",
+        "medicine": "Cough Syrup",
+        "rate": 750,
+        "deliveryOptions": ["Pickup"]
+    },
+    {
+        "name": "Pharma Plus",
+        "contact": "+91 76543 21098",
+        "medicine": "Ibuprofen",
+        "rate": 1600,
+        "deliveryOptions": ["Home Delivery"]
+    },
+    {
+        "name": "Medico",
+        "contact": "+91 65432 10987",
+        "medicine": "Ibuprofen",
+        "rate": 1500,
+        "deliveryOptions": ["Pickup"]
+    },
+    {
+        "name": "Fast Relief",
+        "contact": "+91 54321 09876",
+        "medicine": "Amoxicillin",
+        "rate": 1400,
+        "deliveryOptions": ["Home Delivery", "Pickup"]
+    },
+    {
+        "name": "Care Meds",
+        "contact": "+91 43210 98765",
+        "medicine": "Amoxicillin",
+        "rate": 1350,
+        "deliveryOptions": ["Pickup"]
+    },
+    {
+        "name": "Allergy Free",
+        "contact": "+91 32109 87654",
+        "medicine": "Loratadine",
+        "rate": 1000,
+        "deliveryOptions": ["Home Delivery"]
+    },
+    {
+        "name": "Health First",
+        "contact": "+91 21098 76543",
+        "medicine": "Loratadine",
+        "rate": 950,
+        "deliveryOptions": ["Pickup"]
+    },
+    {
+        "name": "Quick Relief",
+        "contact": "+91 19876 54321",
+        "medicine": "Paracetamol",
+        "rate": 600,
+        "deliveryOptions": ["Home Delivery"]
+    },
+    {
+        "name": "Pharma Care",
+        "contact": "+91 87654 12345",
+        "medicine": "Paracetamol",
+        "rate": 550,
+        "deliveryOptions": ["Pickup"]
+    },
+    {
+        "name": "Dolo Pharmacy",
+        "contact": "+91 76543 32109",
+        "medicine": "Dolo",
+        "rate": 650,
+        "deliveryOptions": ["Home Delivery", "Pickup"]
+    },
+    {
+        "name": "MediHealth",
+        "contact": "+91 65432 09876",
+        "medicine": "Dolo",
+        "rate": 600,
+        "deliveryOptions": ["Pickup"]
+    }
+]

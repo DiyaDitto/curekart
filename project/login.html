@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CureKart Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="login-container">
+        <h2>Login to CureKart</h2>
+        <form id="login-form">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" placeholder="Enter your username" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+    <script>
+        // Handle login form submission
+        document.getElementById('login-form').addEventListener('submit', function (event) {
+            event.preventDefault(); // Prevent page reload
+
+            const username = document.getElementById('username').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+
+            // Redirect to medicine history page with user info passed via query parameters
+            window.location.href = `medicine-history.html?username=${encodeURIComponent(username)}&email=${encodeURIComponent(email)}&phone=${encodeURIComponent(phone)}`;
+        });
+    </script>
+</body>
+
+</html>
